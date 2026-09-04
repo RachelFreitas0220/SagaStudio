@@ -1,0 +1,95 @@
+{
+  "expo": {
+    "name": "SagaStudio",
+    "slug": "sagastudio",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "sagastudio",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.mycorp.sagastudio",
+      "buildNumber": "1",
+      "supportsTablet": true,
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSCameraUsageDescription": "Este app usa a câmera para leitura de QR Code.",
+        "NSMicrophoneUsageDescription": "Este app usa o microfone para funcionalidades de áudio."
+      }
+    },
+    "android": {
+      "package": "com.mycorp.sagastudio",
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "CAMERA",
+        "VIBRATE",
+        "RECEIVE_BOOT_COMPLETED",
+        "android.permission.CAMERA"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static",
+            "deploymentTarget": "15.1"
+          },
+          "android": {
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35
+          }
+        }
+      ],
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon.png",
+          "color": "#ffffff"
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      "expo-barcode-scanner",
+      "@react-native-community/datetimepicker"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "03560f84-cc03-4cc4-84f3-59f658c9dbfa"
+      }
+    },
+    "owner": "rachelzinha001",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/8a16fbac-3419-40e3-8601-39eed4d2c415"
+    }
+  }
+}

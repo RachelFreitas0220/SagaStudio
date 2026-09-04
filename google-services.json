@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "430559866822",
+    "project_id": "sagastudio-386f9",
+    "storage_bucket": "sagastudio-386f9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430559866822:android:0d0ad84cbef21dece48cc7",
+        "android_client_info": {
+          "package_name": "com.mycorp.sagastudio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4lq5MVcjAzbQ-wX6GSaRRqCftdYzq64Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
